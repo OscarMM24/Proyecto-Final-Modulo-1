@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact information</title>
-
+<!-- Este br y la imagen no deben ir dentro de <head> y </head>-->
     <br>       <img src="imgs/nas-and-wu-tang-clan-announce-2023-world-tour.jpg" alt="Photo of world Tour" width="180px">
 </head>
 <body>
@@ -12,15 +12,18 @@
 <br>
 <h2>INFORMATION</h2>
 
-<form action="Datos de Registro.php"></form>
+<!-- Otra recomendación para nombrar archivos es que no contengan espacios en blanco. Puedes usar guiones - _ -->
+<form action="Datos_de_Registro.php"></form>
 
-<label for="User Name">NAME:</label>
-<input name="User Name">
-<placeholder="NAME" required>
 
+<label for="User_Name">NAME:</label>
+<!-- el placeholder es un atributo, por lo que debe ir dentro de las etiquetas input. No es una etiqueta que necesite los simbolos < y > -->
+<input name="User_Name" placeholder="Name">
+
+<!-- Para este input es mejor utilizar el type="email" para que automáticamente se valide que el texto ingresado de verdad sea un correo válido-->
 <label for="E-Mail">E-Mail</label>
-<input type="text">
-</placeholder>
+<input type="text" placeholder="e-mail">
+
                                                                        
 
 <br>
@@ -45,7 +48,7 @@
     <label for="Terms and Conditions">Accept Terms and Conditions</label>
     <br>
     <br>
-
+<!-- Para este input que utilizaste quedaría mejor el type="radio" para que solo puedan elegir una entre si y no-->
     <input type="checkbox"> No
     <input type="checkbox"> Yes
     <br>
